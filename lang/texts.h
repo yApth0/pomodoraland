@@ -5,6 +5,15 @@
 
 namespace arena::dialog
 {
+    inline constexpr std::string_view titlecard {
+    "████   ███  █   █  ███  ████   ███  ████   ███  █      ███  █   █ ████    \n\
+█░░░█ █ ░░█ ██ ██░█ ░░█ █░░░█ █ ░░█ █░░░█ █ ░░█ █░    █ ░░█ ██  █░█░░░█   \n\
+████░░█░ ░█░█░█ █░█░ ░█░█░░░█░█░ ░█░████░░█████░█░░   █████░█░█ █░█░░░█░  \n\
+█░░░░ █░░ █░█░░░█░█░░ █░█░░ █░█░░ █░█░░█░ █░░░█░█░░   █░░░█░█░░██░█░░ █░░ \n\
+█░░░░░ ███ ░█░░ █░░███ ░████ ░░███ ░█░░░█░█░░░█░█████ █░░░█░█░░ █░████ ░░ \n\
+ ░░     ░░░ ░░░  ░░ ░░░ ░░░░░ ░ ░░░ ░░░  ░ ░░  ░░░░░░░ ░░  ░░░░  ░░░░░░ ░ \n\
+  ░      ░░░  ░   ░  ░░░  ░░░░   ░░░  ░   ░ ░   ░ ░░░░░ ░   ░ ░   ░ ░░░░  "};
+
     // Rules
     inline constexpr std::string_view rules {
         "You are a brave soldier who arrived in Pomodora land to participate on a\
@@ -27,12 +36,39 @@ namespace arena::dialog
         "Read the rules*Play*Exit"
     };
 
+    // Difficulty
+    inline constexpr std::string_view difficulty_title{
+        "Choose your desired difficulty"
+    };
+
+    inline constexpr std::string_view difficulty_options{
+        "Easy (full life)*Medium (75% life)*Hard (50% life)"
+    };
+
     // Combat
     inline constexpr std::string_view combat_title {
         "Your turn."
     };
     inline constexpr std::string_view combat_options {
         "Basic attack*Heavy attack*Defend*Breathe*Use potion*Inspect*Surrender"
+    };
+
+    inline constexpr std::string_view inspect_text {
+        "Inspecting enemy stats."
+    };
+
+    // prize screen
+    inline constexpr std::string_view prize_title {
+        "You won! Select a buff for the next fight."
+    };
+
+    inline constexpr std::string_view prize_options {
+        "Restore health*Increase attack damage*Increase potion count"
+    };
+
+    // Terminal stuff
+    inline constexpr std::string_view input_tip {
+        "$> "
     };
 }
 #endif
